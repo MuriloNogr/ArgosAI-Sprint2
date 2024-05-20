@@ -106,3 +106,14 @@ Estas dependências são essenciais para o funcionamento do projeto e para facil
 
 ### Front-End
 ![Diagrama UML Front](https://github.com/MuriloNogr/ArgosAI-Sprint2/blob/main/ArgosAI-FrontUML.png)
+
+##
+Nossa Equipe: 
+
+550531 - Luis Fernando Menezes Zampar: Disruptives Architectures (IOT, IOB & AI) | Compliance, Quality Assurance & Tests
+
+551694 - Diogo Fagioli Bombonatti: DevOps Tools & Cloud Computing
+
+89162 - Murilo Nogueira: JAVA Advanced | Mobile Aplication Development
+
+550711 - Gabriel Galdino da Silva: Relational and Non-relational Databases | .NET
