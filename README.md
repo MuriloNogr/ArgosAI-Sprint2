@@ -51,6 +51,32 @@ POST /api/produtos: Cria um novo produto com base nos dados fornecidos.
 PUT /api/produtos/{id}: Atualiza o produto com o ID especificado com os novos dados fornecidos.
 DELETE /api/produtos/{id}: Exclui o produto com o ID especificado.
 
+6. Configuração e Execução
+    - Após abrir o projeto em seu intelliJ, navegue até src/main/java/br/com/fiap/argosai/ArgosAiApplication.java
+![Passo 1](https://github.com/MuriloNogr/ArgosAI-Sprint2/blob/main/Captura%20de%20tela%202024-05-20%20164440.png)
+
+    - Execute a classe ArgosAiApplication.java
+![Passo 2](https://github.com/MuriloNogr/ArgosAI-Sprint2/blob/main/Captura%20de%20tela%202024-05-20%20164454.png)
+
+    - Aguarde enquanto o Spring Inicializa o servidor Tomcat
+![Passo 3](https://github.com/MuriloNogr/ArgosAI-Sprint2/blob/main/Captura%20de%20tela%202024-05-20%20164528.png)
+
+    - Após inicinialzado o back-end, navegue até a pasta frontend na raiz do projeto
+![Passo 4](https://github.com/MuriloNogr/ArgosAI-Sprint2/blob/main/Captura%20de%20tela%202024-05-20%20164547.png)
+
+    - Abra o terminal no diretório do frontend
+![Passo 5](https://github.com/MuriloNogr/ArgosAI-Sprint2/blob/main/Captura%20de%20tela%202024-05-20%20164605.png)
+
+    - Execute o comando npm install para baixar as dependencias necessárias
+![Passo 6](https://github.com/MuriloNogr/ArgosAI-Sprint2/blob/main/Captura%20de%20tela%202024-05-20%20164718.png)
+
+    - Execute o comando npm start para rodar o front-end da aplicação
+![Passo 7](https://github.com/MuriloNogr/ArgosAI-Sprint2/blob/main/Captura%20de%20tela%202024-05-20%20164756.png)
+
+    - A aplicação irá abrir por padrão na porta http://localhost:3000
+![Passo 8](https://github.com/MuriloNogr/ArgosAI-Sprint2/blob/main/Captura%20de%20tela%202024-05-20%20164832.png)
+
+
 Diagrama UML (Back-End)
 ![Diagrama UML](https://github.com/MuriloNogr/ArgosAI-Sprint2/blob/main/ArgosAI-UMLv2.png)
 
