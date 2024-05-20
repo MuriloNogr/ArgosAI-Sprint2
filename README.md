@@ -76,7 +76,21 @@ DELETE /api/produtos/{id}: Exclui o produto com o ID especificado.
     - A aplicação irá abrir por padrão na porta http://localhost:3000
 ![Passo 8](https://github.com/MuriloNogr/ArgosAI-Sprint2/blob/main/Captura%20de%20tela%202024-05-20%20164832.png)
 
+7. Considerações Finais
+O projeto ArgosAI apresenta uma estrutura robusta e modular, facilitando a manutenção e extensão futura. Além disso, a integração com diversas tecnologias Spring oferece uma base sólida para o desenvolvimento de aplicações web escaláveis e de alto desempenho.
 
+Quanto aos artefatos do arquivo pom.xml, aqui está uma explicação do que cada um faz:
+
+Spring Boot Starters: Conjunto de dependências do Spring Boot que facilitam a configuração de projetos Spring.
+Hibernate: Framework ORM para mapeamento objeto-relacional.
+Oracle Database JDBC: Driver JDBC para conexão com o banco de dados Oracle.
+Lombok: Biblioteca que automatiza a geração de código boilerplate em classes Java.
+ModelMapper: Biblioteca para mapeamento de objetos.
+Spring Boot Test: Dependência para testes automatizados em projetos Spring Boot.
+Reactor Test: Dependência para testes reativos.
+Spring REST Docs: Ferramenta para geração de documentação de API.
+Jakarta Validation API: API de validação de dados.
+Estas dependências são essenciais para o funcionamento do projeto e para facilitar o desenvolvimento, teste e documentação da aplicação.
 
 Diagrama UML (Back-End)
 ![Diagrama UML](https://github.com/MuriloNogr/ArgosAI-Sprint2/blob/main/ArgosAI-UMLv2.png)
