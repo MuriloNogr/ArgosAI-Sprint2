@@ -77,6 +77,7 @@ DELETE /api/produtos/{id}: Exclui o produto com o ID especificado.
 ![Passo 8](https://github.com/MuriloNogr/ArgosAI-Sprint2/blob/main/Captura%20de%20tela%202024-05-20%20164832.png)
 
 
+
 Diagrama UML (Back-End)
 ![Diagrama UML](https://github.com/MuriloNogr/ArgosAI-Sprint2/blob/main/ArgosAI-UMLv2.png)
 
