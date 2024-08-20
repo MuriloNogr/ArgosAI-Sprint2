@@ -18,6 +18,7 @@ const ProdutoList = () => {
             <div className="product-list">
                 {produtos.map(produto => (
                     <div key={produto.id} className="product-card">
+                        <h1>{produto.id}</h1>
                         <h3>{produto.nome}</h3>
                         <p>{produto.descricao}</p>
                         <p>Quantidade: {produto.quantidade}</p>

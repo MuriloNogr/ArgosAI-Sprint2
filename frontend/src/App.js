@@ -8,8 +8,15 @@ import UpdateProduto from './components/UpdateProduto';
 import DeleteProduto from './components/DeleteProduto';
 import SearchBar from './components/SearchBar';
 import SearchPage from './pages/SearchPage';
+import SearchByName from './components/SearchByName';
+import ProdutoSearchResults from './components/ProdutoSearchResults';
+import SearchPageByName from './pages/SearchPageByName';
+import SearchPageById from './pages/SearchPageById';
+import IaPage from './pages/IaPage';
+import HistoricoPage from './pages/HistoricoPage';
+import VenderPage from './pages/VenderPage';
 import { FaHome, FaList, FaPlus, FaSearch } from 'react-icons/fa';
-import './App.css'; // Import the CSS file
+import './App.css';
 
 function App() {
     return (
@@ -33,6 +40,13 @@ function App() {
                     <Route path="/update/:id" element={<UpdateProduto />} />
                     <Route path="/delete/:id" element={<DeleteProduto />} />
                     <Route path="/buscar" element={<SearchPage />} />
+                    <Route path="/buscar/id" element={<SearchPageById />} />
+                    <Route path="/buscar-nome" element={<SearchByName />} />
+                    <Route path="/produtos/nome" element={<SearchPageByName />} />
+                    <Route path="/produtos/nome/:nome" element={<ProdutoSearchResults />} />
+                    <Route path="/ia" element={<IaPage />} />
+                    <Route path="/historico" element={<HistoricoPage />} />
+                    <Route path="/vender" element={<VenderPage />} />
                 </Routes>
             </div>
         </Router>

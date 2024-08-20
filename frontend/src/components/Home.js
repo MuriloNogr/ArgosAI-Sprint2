@@ -25,6 +25,18 @@ const Home = () => (
                 <img src="/images/Buscar.svg" alt="Logo" className="card-image"/>
                 <div className="card-caption">Buscar Produtos</div>
             </Link>
+            <Link to="/vender" className="card">
+                <img src="/images/sell.svg" alt="Logo" className="card-image"/>
+                <div className="card-caption">Computar venda</div>
+            </Link>
+            <Link to="/ia" className="card">
+                <img src="/images/ia.svg" alt="Logo" className="card-image"/>
+                <div className="card-caption">Sugerir produtos com IA</div>
+            </Link>
+            <Link to="/historico" className="card">
+                <img src="/images/history.svg" alt="Logo" className="card-image"/>
+                <div className="card-caption">Consultar histórico de compras</div>
+            </Link>
         </div>
     </div>
 

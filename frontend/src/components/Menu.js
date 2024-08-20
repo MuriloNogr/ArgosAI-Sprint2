@@ -21,9 +21,10 @@ const Menu = () => {
                 <li><Link to="/">Home</Link></li>
                 <li><Link to="/produtos">Produtos</Link></li>
                 <li><Link to="/add">Adicionar Produto</Link></li>
+                <li><Link to="/nome">Pesquisar Produto</Link></li>
             </ul>
             <form onSubmit={handleSearch}>
-                <input
+            <input
                     type="text"
                     placeholder="Buscar produto por ID"
                     value={searchId}

@@ -23,6 +23,7 @@ public class ProdutoController {
     @Autowired
     private ModelMapper modelMapper;
 
+    @CrossOrigin(origins = "http://localhost:3000")
     @GetMapping
     public List<ProdutoDTO> getAllProdutos() {
         return produtoService.findAll().stream()
@@ -30,6 +31,7 @@ public class ProdutoController {
                 .collect(Collectors.toList());
     }
 
+    @CrossOrigin(origins = "http://localhost:3000")
     @GetMapping("/{id}")
     public ResponseEntity<ProdutoDTO> getProdutoById(@PathVariable Long id) {
         return produtoService.findById(id)
@@ -37,12 +39,22 @@ public class ProdutoController {
                 .orElseGet(() -> ResponseEntity.notFound().build());
     }
 
+    @CrossOrigin(origins = "http://localhost:3000")
+    @GetMapping("/buscar")
+    public List<ProdutoDTO> getProdutosByNome(@RequestParam String nome) {
+        return produtoService.findByNome(nome).stream()
+                .map(this::convertToDto)
+                .collect(Collectors.toList());
+    }
+
+    @CrossOrigin(origins = "http://localhost:3000")
     @PostMapping
     public ProdutoDTO createProduto(@Valid @RequestBody ProdutoDTO produtoDTO) {
         Produto produto = convertToEntity(produtoDTO);
         return convertToDto(produtoService.save(produto));
     }
 
+    @CrossOrigin(origins = "http://localhost:3000")
     @PutMapping("/{id}")
     public ResponseEntity<ProdutoDTO> updateProduto(@PathVariable Long id, @Valid @RequestBody ProdutoDTO produtoDTO) {
         return produtoService.findById(id)
@@ -53,6 +65,7 @@ public class ProdutoController {
                 }).orElseGet(() -> ResponseEntity.notFound().build());
     }
 
+    @CrossOrigin(origins = "http://localhost:3000")
     @DeleteMapping("/{id}")
     public ResponseEntity<?> deleteProduto(@PathVariable Long id) {
         return produtoService.findById(id)

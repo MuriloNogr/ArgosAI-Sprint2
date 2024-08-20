@@ -23,6 +23,10 @@ public class ProdutoService {
         return produtoRepository.findById(id);
     }
 
+    public List<Produto> findByNome(String nome) {
+        return produtoRepository.findByNomeContainingIgnoreCase(nome);
+    }
+
     public Produto save(Produto produto) {
         return produtoRepository.save(produto);
     }
